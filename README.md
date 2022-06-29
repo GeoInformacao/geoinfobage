@@ -73,3 +73,30 @@ If you want to contribute to geoinfobage and add new functions or datasets, a gu
 
   </tr>
 <table>
+
+# **Credits**
+<right>
+
+| <img src="https://github.com/GeoInformacao/geoinfobage/blob/master/logobage.png" width=115> | <img src="https://github.com/GeoInformacao/geoinfobage/blob/master/logogeoinformacao.png" width=75> |
+|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+|                  [Prefeitura Municipal de Bagé](https://www.bage.rs.gov.br/)                 |                        [GeoInformação](https://sites.google.com/site/ggcbage/)                       |
+
+</right>
+
+The original shapefiles are created by official government institutions. The geoinfobage APP uses the geobr package as a basis for some functions.
+The geobr package is developed by a team from the Institute of Applied Economic Research (Ipea) and the geoinfobage APP is developed by a team from the GeoInformation sector of the Municipality of Bagé/RS. If you want to cite this project, you can cite it as:
+
+     Silva,R.R.;Antoria,C.P.A.;Marques,L.P. (2022) geoinfobage: Democratizing access to Geospatial information in the city of Bagé-RS.
+     GitHub repository - https://github.com/GeoInformacao/geoinfobage.
+     
+    
+A BibTeX entry for LaTeX users is:
+
+     @Misc {geoinfobage,
+     title = {geoinfobage: Democratizing access to Geospatial information in the city of Bag{\'e} - RS},
+     author = {Silva,Rodrigo Rosa da. and Antoria,Cassio Pimento Araujo. and Marques,Luisa Pinheiro.},
+     note= {pacote R versão 1.1.0},
+     year = {2022},
+     url = {https://github.com/GeoInformacao/geoinfobage}
+     }
+
