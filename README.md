@@ -95,7 +95,7 @@ A BibTeX entry for LaTeX users is:
      @Misc {geoinfobage,
      title = {geoinfobage: Democratizing access to Geospatial information in the city of Bag{\'e} - RS},
      author = {Silva,Rodrigo Rosa da. and Antoria,Cassio Pimento Araujo. and Marques,Luisa Pinheiro.},
-     note= {pacote R versão 1.1.0},
+     note= {APP WEB versão 1.0.0},
      year = {2022},
      url = {https://github.com/GeoInformacao/geoinfobage}
      }
