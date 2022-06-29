@@ -69,7 +69,7 @@ If you want to contribute to geoinfobage and add new functions or datasets, a gu
   <tr>
     <td align="center"><a href="https://github.com/Prof-Rodrigo-Silva"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33011697?v=4" width="100px;" alt=""/><br /><sub><b>Rodrigo R Silva</b></sub></a><br /><a href="https://github.com/Prof-Rodrigo-Silva" title="Desenvolvedor">👨‍🚀</a></td>
     <td align="center"><a href="https://github.com/GeoDataBase"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67596225?v=4" width="100px;" alt=""/><br /><sub><b>Cassio P A Antoria</b></sub></a><br /><a href="https://github.com/GeoDataBase" title="Desenvolvedor">👨‍🚀</a></td>
-    <td align="center"><a href="https://github.com/luisamarques"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80796776?v=4" width="100px;" alt=""/><br /><sub><b>Luisa P Marques</b></sub></a><br /><a href="https://github.com/luisamarques" title="Desenvolvedora">👨‍🚀</a></td>
+    <td align="center"><a href="https://github.com/luisamarques"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37715209?v=4" width="100px;" alt=""/><br /><sub><b>Luisa P Marques</b></sub></a><br /><a href="https://github.com/luisamarques" title="Desenvolvedora">👨‍🚀</a></td>
 
   </tr>
 <table>
