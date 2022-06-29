@@ -77,7 +77,7 @@ If you want to contribute to geoinfobage and add new functions or datasets, a gu
 # **Credits**
 <right>
 
-| <img src="https://github.com/GeoInformacao/geoinfobage/blob/master/logobage.png" width=115> | <img src="https://github.com/GeoInformacao/geoinfobage/blob/master/logogeoinformacao.png" width=75> |
+| <img src="https://github.com/GeoInformacao/geoinfobage/blob/main/logobage.png" width=115> | <img src="https://github.com/GeoInformacao/geoinfobage/blob/main/logogeoinformacao.png" width=75> |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 |                  [Prefeitura Municipal de Bagé](https://www.bage.rs.gov.br/)                 |                        [GeoInformação](https://sites.google.com/site/ggcbage/)                       |
 
