@@ -1,5 +1,12 @@
 # **geoinfobage**
 
+![](https://img.shields.io/github/issues/GeoInformacao/geoinfobage)
+![](https://img.shields.io/github/issues-pr-raw/GeoInformacao/geoinfobage)
+![](https://img.shields.io/github/issues-pr-closed/GeoInformacao/geoinfobage)
+![](https://img.shields.io/github/languages/top/GeoInformacao/geoinfobage)
+![](https://img.shields.io/github/repo-size/GeoInformacao/geoinfobage)
+![](https://img.shields.io/github/license/GeoInformacao/geoinfobage)
+
 **Project Status: In development** :warning:
 
 # **Description**
