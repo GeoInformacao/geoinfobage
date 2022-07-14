@@ -1,11 +1,13 @@
 # **geoinfobage**
 
+[![CRAN](https://www.r-pkg.org/badges/version/geobage)](https://CRAN.R-project.org/package=geobage)
 ![](https://img.shields.io/github/issues/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/issues-pr-raw/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/issues-pr-closed/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/languages/top/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/repo-size/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/license/GeoInformacao/geoinfobage)
+[![l](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 **Project Status: In development** :warning:
 
