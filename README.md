@@ -1,6 +1,5 @@
 # **geoinfobage**
 
-[![CRAN](https://www.r-pkg.org/badges/version/geobage)](https://CRAN.R-project.org/package=geobage)
 ![](https://img.shields.io/github/issues/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/issues-pr-raw/GeoInformacao/geoinfobage)
 ![](https://img.shields.io/github/issues-pr-closed/GeoInformacao/geoinfobage)
