@@ -1,4 +1,4 @@
-pacotes <- list("devtools", "geobage", "shiny", "leaflet")
+pacotes <- list("devtools", "geobage", "shiny","shinydashboard", "dplyr", "ggplot")
 
 for(i in seq_along(pacotes)){
     pacote <- pacotes[[i]]
@@ -6,11 +6,13 @@ for(i in seq_along(pacotes)){
           print(paste("Pacote instalado...", pacote))
           print(paste("Carregando...", pacote))
           library(pacote,  character.only = TRUE)
-    } else {
+    }
+    else if(pacote == "geobage"){
+      print(paste("Instalando", pacote, "..."))
+      devtools::install_github("GeoInformacao/geobage")
+    }
+    else {
           print(paste("Instalando", pacote, "..."))
           install.packages(pacote)
     }
 }
-
-
-runApp()
