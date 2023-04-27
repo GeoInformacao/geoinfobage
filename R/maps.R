@@ -1,6 +1,6 @@
-map_shape_bg <- function(data){
+map_shape_bg <- function(data, label){
   leaflet(data) %>% addTiles()%>%
-    addPolygons(color = "green", label = "title")
+    addPolygons(color = "darkblue", label = ~label, weight = 1, opacity = 0.5)
 }
 map_points_bg <- function(data){
   leaflet(data) %>% addTiles()%>%
