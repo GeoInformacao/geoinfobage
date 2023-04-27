@@ -1,53 +1,54 @@
-bage  <-  read_shape_bg()
-
-shape_bage <-  ggplot() +  geom_sf(data=bg,  color= "black", size=.15) + labs(title="Municipio de Bagé", caption='Fonte: IBGE', size=8)+
-  scale_fill_distiller(palette = "Greens", limits=c(0.5, 0.8), name="Code_muni") + theme_minimal()
-
-aerodromes
-allotments
-bathed
-biome
-census_tract
-iphan_listed_properties
-conservation_unit
-dams_in_the_municipality
-districts_of_bage
-drainage_mass_stretch
-drainage_stretch
-environmental_sensitivity
-geology
-geomorphology
-hydro-stratified_unit
-hydrogeology
-hydrography
-health_facilitie
-immediate_region
-information_about_the_municipality_of_bage
-intermediate_region
-land_use
-legal_reserve
-level_curve
-macro_urban_areas
-bodies_of_water
-meso_region
-micro_region
-milk_production
-municipality_seat
-paleontology
-park_gaucho
-paved_highways
-pedology
-public_buildings
-public_rural_properties
-rail_lines
-rural_lots
-rural_roads
-sand_banks
-soil_exploration
-soil_types
-transmission_lines
-springs
-unpaved_highways
-urban_footprint
-use_ground_cover
-vegetation
+map_shape_bg <- function(data){
+  ggplot() + geom_sf(data=data, color= "black", size=.15) +
+    labs(title="Municipio de Bagé", caption='Fonte: IBGE', size=8)+
+    scale_fill_distiller(palette = "Greens", limits=c(0.5, 0.8), name="Code_muni") + theme_minimal()
+}
+map_shape_bg(read_shape_bg())
+aerodromes <- map_shape_bg(read_aerodromes_bg())
+allotments <- map_shape_bg(read_allotments_bg())
+bathed <- map_shape_bg(read_bathed_bg())
+biome <- map_shape_bg(read_biome_pampa_bg())
+census_tract <- map_shape_bg(read_census_tract_bg())
+iphan_listed_properties <- map_shape_bg(read_compreb_bg())
+conservation_unit <- map_shape_bg(read_conservation_unit_bg())
+dams_in_the_municipality <- map_shape_bg(read_dam_bg())
+districts_of_bage <- map_shape_bg(read_districts_bg())
+drainage_mass_stretch <- map_shape_bg(read_drainage_mass_stretch_bg())
+drainage_stretch <- map_shape_bg(read_drainage_stretch_bg())
+environmental_sensitivity <- map_shape_bg(read_environmental_sensitivity_bg())
+geology <- map_shape_bg(read_geology_bg())
+geomorphology <- map_shape_bg(read_geomorphology_bg())
+hydro-stratified_unit <- map_shape_bg(read_hydro_stratified_unit_bg())
+hydrogeology <- map_shape_bg(read_hydrogeology_bg())
+hydrography <- map_shape_bg(read_hydrography_bg())
+health_facilitie <- map_shape_bg(read_health_facilities_bg())
+immediate_region <- map_shape_bg(read_immediate_region_bg())
+information_about_the_municipality_of_bage <- map_shape_bg(read_information_about_the_municipality_of_bage_bg())
+intermediate_region <- map_shape_bg(read_intermediate_region_bg())
+land_use <- map_shape_bg(read_land_use_bg())
+legal_reserve <- map_shape_bg(read_legal_reserve_bg())
+level_curve <- map_shape_bg(read_level_curve_bg())
+macro_urban_areas <- map_shape_bg(read_macro_urban_areas_bg())
+bodies_of_water <- map_shape_bg(read_mass_water_bg())
+meso_region <- map_shape_bg(read_meso_region_bg())
+micro_region <- map_shape_bg(read_micro_region_bg())
+milk_production <- map_shape_bg(read_milk_production_bg())
+municipality_seat <- map_shape_bg(read_municipal_seat_bg())
+paleontology <- map_shape_bg(read_paleontology_bg())
+park_gaucho <- map_shape_bg(read_park_gaucho_bg())
+paved_highways <- map_shape_bg(read_paved_highways_bg())
+pedology <- map_shape_bg(read_pedology_bg())
+public_buildings <- map_shape_bg(read_public_buildings_bg())
+public_rural_properties <- map_shape_bg(read_public_rural_properties_bg())
+rail_lines <- map_shape_bg(read_railways_bg())
+rural_lots <- map_shape_bg(read_rural_lots_bg())
+rural_roads <- map_shape_bg(read_rural_roads_bg())
+sand_banks <- map_shape_bg(read_sand_banks_bg())
+soil_exploration <- map_shape_bg(read_soil_exploration_bg())
+soil_types <- map_shape_bg(read_soil_types_bg())
+transmission_lines <- map_shape_bg(read_transmission_lines_bg())
+springs <- map_shape_bg(read_springs_bg())
+unpaved_highways <- map_shape_bg(read_unpaved_highways_bg())
+urban_footprint <- map_shape_bg(read_urban_area_bg())
+use_ground_cover <- map_shape_bg(read_use_ground_cover_bg())
+vegetation <- map_shape_bg(read_vegetation_bg())

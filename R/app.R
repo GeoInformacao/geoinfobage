@@ -1,4 +1,4 @@
-pacotes <- list("devtools", "geobage", "shiny","shinydashboard", "dplyr", "ggplot")
+pacotes <- list("devtools", "geobage", "shiny","shinydashboard", "dplyr", "ggplot2")
 
 for(i in seq_along(pacotes)){
     pacote <- pacotes[[i]]
