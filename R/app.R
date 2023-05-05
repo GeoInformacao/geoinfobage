@@ -21,8 +21,8 @@ for(i in seq_along(pacotes)){
     }
     else {
           print(paste("Instalando", pacote, "..."))
-          install.packages(pacote, dependencies = F)
-          library(pacote, character.only = T)
+          install.packages(pacote, dependencies = TRUE)
+          print(paste("Instalando ", pacote, "..."))
+          library(pacote, character.only = TRUE)
     }
 }
-
