@@ -8,8 +8,9 @@ server <- function(input, output, session){
            #"1" = {output$meu_mapa <- renderLeaflet(
             #                                        map_points_bg(read_aerodromes_bg(), data)
              #                                       )},
-           "2" = {output$meu_mapa <- renderLeaflet(
-                                                    map_shape_bg(data <- read_allotments_bg(), data$nome)
+           "2" = {map<-                                                    map_shape_bg(data <- read_allotments_bg(), data$nome)
+
+             output$meu_mapa <- renderLeaflet(map
                                                     )},
            "3" = {output$meu_mapa <- renderLeaflet(
                                                     map_shape_bg(data <- read_bathed_bg(), data$NOM_TEMA)
@@ -152,11 +153,20 @@ server <- function(input, output, session){
             #                                        map_shape_bg(data <- read_public_rural_properties_bg(), data)
              #                                       )},
            
-           {output$meu_mapa <- renderLeaflet(
-                                                    map_shape_bg(data <- read_shape_bg(), data$name_muni)
-                                                    )}
+           {
+              map <- map_shape_bg(data <- read_shape_bg(), data$name_muni)
+               output$meu_mapa <- renderLeaflet(map)
+               
+               output$download <- downloadHandler(
+                 filename = function() {
+                   paste("mapa-", Sys.Date(), ".html", sep="")
+                 },
+                 content = function(file) {
+                   saveWidget(map, file, selfcontained = TRUE)
+                 }
+                )
+           }
     )
-          
-    
   })
+ 
 }
