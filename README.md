@@ -78,6 +78,7 @@ If you want to contribute to geoinfobage and add new functions or datasets, plea
     <td align="center"><a href="https://github.com/Prof-Rodrigo-Silva"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33011697?v=4" width="100px;" alt=""/><br /><sub><b>Rodrigo R Silva</b></sub></a><br /><a href="https://github.com/Prof-Rodrigo-Silva" title="Desenvolvedor">👨‍🚀</a></td>
     <td align="center"><a href="https://github.com/GeoDataBase"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67596225?v=4" width="100px;" alt=""/><br /><sub><b>Cassio P A Antoria</b></sub></a><br /><a href="https://github.com/GeoDataBase" title="Desenvolvedor">👨‍🚀</a></td>
     <td align="center"><a href="https://github.com/luisamarques"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37715209?v=4" width="100px;" alt=""/><br /><sub><b>Luisa P Marques</b></sub></a><br /><a href="https://github.com/luisamarques" title="Desenvolvedora">👨‍🚀</a></td>
+    <td align="center"><a href="https://github.com/EduardoMoreaes"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88555769?v=4" width="100px;" alt=""/><br /><sub><b>Eduardo Moraes</b></sub></a><br /><a href="https://github.com/EduardoMoreaes" title="Desenvolvedor">👨‍🚀</a></td>
 
   </tr>
 <table>
@@ -94,7 +95,7 @@ If you want to contribute to geoinfobage and add new functions or datasets, plea
 The original shapefiles are created by official government institutions. The geoinfobage APP uses the geobr package as a basis for some functions.
 The geobr package is developed by a team from the Institute of Applied Economic Research (Ipea) and the geoinfobage APP is developed by a team from the GeoInformation sector of the Municipality of Bagé/RS. If you want to cite this project, you can cite it as:
 
-     Silva,R.R.;Antoria,C.P.A.;Marques,L.P. (2022) geoinfobage: Democratizing access to Geospatial information in the city of Bagé-RS.
+     Silva,R.R.;Antoria,C.P.A.;Marques,L.P.; Moraes,E. (2023) geoinfobage: Democratizing access to Geospatial information in the city of Bagé-RS.
      GitHub repository - https://github.com/GeoInformacao/geoinfobage.
      
     
@@ -102,8 +103,8 @@ A BibTeX entry for LaTeX users is:
 
      @Misc {geoinfobage,
      title = {geoinfobage: Democratizing access to Geospatial information in the city of Bag{\'e} - RS},
-     author = {Silva,Rodrigo Rosa da. and Antoria,Cassio Pimento Araujo. and Marques,Luisa Pinheiro.},
+     author = {Silva,Rodrigo Rosa da. and Antoria,Cassio Pimento Araujo. and Marques,Luisa Pinheiro. and Moraes, Eduardo},
      note= {APP WEB versão 1.0.0},
-     year = {2022},
+     year = {2023},
      url = {https://github.com/GeoInformacao/geoinfobage}
      }
