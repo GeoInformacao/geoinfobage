@@ -569,17 +569,20 @@ server <- function(input, output, session){
              #                                       },
            
            {
-              map <- map_shape_bg(data <- read_shape_bg(), data$name_muni)
-               output$meu_mapa <- renderLeaflet(map)
-               
-               output$download <- downloadHandler(
-                 filename = function() {
-                   paste("mapa-", Sys.Date(), ".html", sep="")
-                 },
-                 content = function(file) {
-                   saveWidget(map, file, selfcontained = TRUE)
-                 }
-                )
+             
+             map <- map_shape_bg(data <- read_shape_bg(), data$name_muni)
+             
+             output$meu_mapa <- renderLeaflet(map)
+             
+             output$download <- downloadHandler(
+               filename = function() {
+                 paste("mapa-", Sys.Date(), ".html", sep="")
+               },
+               content = function(file) {
+                 saveWidget(map, "mapa.hmtl", selfcontained = FALSE)
+                 webshot("mapa.html", file="mapa.png", cliprect = "viewport")
+               }
+             )
            }
     )
   })
