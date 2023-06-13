@@ -1,28 +1,41 @@
 source("app.R")
 
 ui <- fluidPage(
-    
+    fluidRow(id = "cabecalho",
+             column(12,
+                    tags$h1("Prefeitura municipal de Bagé"),
+                    tags$div(id='img')
+                    )
+    ),
     fluidRow(
       dashboardPage(
         skin = "blue",
         title="GeoInfoBagé",    
         dashboardHeader(
-          title="GeoInfoBagé",
-          titleWidth = 350,
           tags$li(
             class="dropdown",
             tags$style(
               HTML(
                 ".main-header{
-                    background-color: transparent;
                     text-align: left;
+                    height: 0;
                 }
                 .main-header .logo{
-                    background-image: url(https://github.com/GeoInformacao/geoinfobage/blob/main/logobage.png?raw=true);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
                     text-align: left;
+                    height: 0;
+                }
+                .skin-blue .main-header .navbar {
+                    background-color: transparent;
+                    height: 0;
+                }
+                #cabecalho{
+                    background-color: #3c8dbc;
+                    height: 7em;
+                    text-align: center;
+                    color: white;
+                }
+                #img{
+                    background-image:url('../logobage.png');
                 }
                 "
               )
@@ -34,6 +47,7 @@ ui <- fluidPage(
         dashboardSidebar(disable = T),
         
         dashboardBody(
+          
           fluidRow(
                 column(12,
                        leafletOutput("meu_mapa", height = 850),
