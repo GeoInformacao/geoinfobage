@@ -2,10 +2,28 @@ source("app.R")
 
 ui <- fluidPage(
     fluidRow(id = "cabecalho",
-             column(12,
-                    tags$h1("Prefeitura municipal de Bagé"),
+             column(4),
+             column(3,
+                    tags$h1("Prefeitura municipal de Bagé")
+                    ),
+             column(1,
                     tags$div(id='img')
+             )
+    ),
+    fluidRow(id = "sub-cabecalho",
+             column(3,
+                    tags$h3("Setor de geomensura e cartografia"),
+             ),
+             column(1,
+                    tags$div(id='img-setor')
+             ),
+             column(6),
+             column(2,
+                    a(href="google.com",
+                    actionButton("tabelas", "Ver todos os mapas")
+                      
                     )
+            )
     ),
     fluidRow(
       dashboardPage(
@@ -33,9 +51,42 @@ ui <- fluidPage(
                     height: 7em;
                     text-align: center;
                     color: white;
+                    justify: justify;
+                }
+                #sub-cabecalho{
+                    background-color: #3c8daa;
+                    text-align: center;
+                    color: white;
+                    justify: justify;
                 }
                 #img{
-                    background-image:url('../logobage.png');
+                    background-image: url(https://github.com/EduardoMoreaes/geoinfobage/blob/main/logobage.png?raw=true);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 5em;
+                    width: 5em;
+                }
+                #img-setor{
+                    background-image: url(https://github.com/EduardoMoreaes/geoinfobage/blob/main/logogeoinformacao.png?raw=true);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 4em;
+                    width: 4em;
+                }
+                #tabelas{
+                    background-color: white;
+                    border-radius: 15px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+                #tabelas:hover{
+                    background-color: blue;
+                    color: white;
+                }
+                h3{
+                    margin-top: 10px;
                 }
                 "
               )

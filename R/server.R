@@ -3,6 +3,10 @@ source("./maps.R")
 
 server <- function(input, output, session){
   
+  observeEvent(input$tabelas,{
+    cat("Link clicado!\n")
+  })
+  
   observeEvent(input$maps,{
     switch(input$maps,
            #"1" = {output$meu_mapa <- renderLeaflet(
