@@ -108,6 +108,9 @@ fluidRow(id = "cabecalho",
                 background-color: blue;
                 color: white;
             }
+            #todas-tabelas{
+                justify-content: space-around !important;
+            }
             h3{
                 margin-top: 10px;
             }
@@ -201,7 +204,7 @@ fluidRow(id = "cabecalho",
 ),
       #### page2 ####
     tabPanel("tabela",
-        includeHTML("https://raw.githubusercontent.com/EduardoMoreaes/geoinfobage/611353fedb2a042a6a55b030b0fa24ae682553fe/R/tabelas.html")
+        includeHTML("https://raw.githubusercontent.com/EduardoMoreaes/geoinfobage/0b4628b05465f69ec42c98ef69a672186ecf0657/R/tabelas.html")
     )
   )
 )
