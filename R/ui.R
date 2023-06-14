@@ -76,7 +76,7 @@ fluidRow(id = "cabecalho",
                 background-color: white;
             }
             #cabecalho{
-                background-color: #3c8dbc;
+                background-color: #3c8dbc !important;
                 height: 7em;
                 text-align: center;
                 color: white;
@@ -110,6 +110,9 @@ fluidRow(id = "cabecalho",
             }
             h3{
                 margin-top: 10px;
+            }
+            table{
+                border: 1px solid black;
             }
             "
           )
@@ -201,7 +204,7 @@ fluidRow(id = "cabecalho",
 ),
       #### page2 ####
     tabPanel("tabela",
-        includeHTML("https://github.com/EduardoMoreaes/geoinfobage/raw/852df02558639300776a84d84e71c26a82c953e0/R/tabelas.html")
+        includeHTML("https://github.com/EduardoMoreaes/geoinfobage/raw/7452b5275bfbe3dc14a7c3e90fa671ad3e87fc40/R/tabelas.html")
     )
   )
 )
