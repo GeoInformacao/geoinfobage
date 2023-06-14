@@ -201,7 +201,7 @@ fluidRow(id = "cabecalho",
 ),
       #### page2 ####
     tabPanel("tabela",
-        includeHTML("https://raw.githubusercontent.com/EduardoMoreaes/geoinfobage/main/R/tabelas.html")
+        includeHTML("https://raw.githubusercontent.com/EduardoMoreaes/geoinfobage/d5f3068eb8dfa4a247506d2a7d6bf8b8b03ff4ab/R/tabelas.html")
     )
   )
 )
