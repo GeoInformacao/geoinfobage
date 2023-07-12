@@ -39,7 +39,14 @@ fluidRow(id = "cabecalho",
         class="dropdown",
         tags$style(
           HTML(
-            ".main-header{
+            "
+            article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+                display: initial;
+            }
+            .skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
+                background-color: transparent;
+            }
+            .main-header{
                 text-align: left;
                 height: 0;
             }
@@ -141,7 +148,7 @@ fluidRow(id = "cabecalho",
             column(12,
                    leafletOutput("meu_mapa", height = 815),
                    absolutePanel(
-                     top = "10%", right = "83%",
+                     top = "10%",
                      width = 300, height = 100,
                      backgroundColor = "transparent",
                      box(width = NULL, status = "warning",
