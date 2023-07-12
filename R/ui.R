@@ -39,7 +39,14 @@ fluidRow(id = "cabecalho",
         class="dropdown",
         tags$style(
           HTML(
-            ".main-header{
+            "
+            article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+                display: initial;
+            }
+            .skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
+                background-color: transparent;
+            }
+            .main-header{
                 text-align: left;
                 height: 0;
             }
@@ -141,7 +148,7 @@ fluidRow(id = "cabecalho",
             column(12,
                    leafletOutput("meu_mapa", height = 815),
                    absolutePanel(
-                     top = "10%", right = "83%",
+                     top = "10%",
                      width = 300, height = 100,
                      backgroundColor = "transparent",
                      box(width = NULL, status = "warning",
@@ -217,7 +224,8 @@ fluidRow(id = "cabecalho",
 ),
       #### page2 ####
     tabPanel("Lista de Mapas",
-        includeHTML("https://github.com/EduardoMoreaes/geoinfobage/raw/b8629c4d30c5f975af5b93ac113a68ba26a739c3/R/tabelas.html")
+        includeHTML("https://raw.githubusercontent.com/EduardoMoreaes/geoinfobage/main/R/tabelas.html")
+
     ),
 
       #### page3 ####
