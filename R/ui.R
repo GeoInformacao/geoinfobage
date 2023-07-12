@@ -4,19 +4,19 @@ ui <- fluidRow(
 fluidRow(id = "cabecalho",
          column(4),
          column(3,
-                tags$h1("Prefeitura municipal de Bagé")
+                tags$h1("Prefeitura Municipal de Bagé")
                 ),
          column(1,
                 tags$div(id='img')
          )
 ),
   navbarPage(title = tags$div(
-    "Setor de geomensura e cartografia",
+    "Setor de Geomensura e Cartografia",
     tags$img(src = "https://github.com/EduardoMoreaes/geoinfobage/blob/main/logogeoinformacao.png?raw=true",
               width = 20),
     ),
              
-    tabPanel("dados",
+    tabPanel("Visualização de Mapas",
       #### page1 #####
   dashboardPage(
     skin = "blue",
@@ -203,8 +203,13 @@ fluidRow(id = "cabecalho",
   )            
 ),
       #### page2 ####
-    tabPanel("tabela",
-        includeHTML("https://github.com/EduardoMoreaes/geoinfobage/raw/7452b5275bfbe3dc14a7c3e90fa671ad3e87fc40/R/tabelas.html")
+    tabPanel("Lista de Mapas",
+        includeHTML("https://github.com/EduardoMoreaes/geoinfobage/raw/b8629c4d30c5f975af5b93ac113a68ba26a739c3/R/tabelas.html")
+    ),
+
+      #### page3 ####
+    tabPanel("Equipe Desenvolvedora",
+        includeHTML("https://github.com/EduardoMoreaes/geoinfobage/raw/b8629c4d30c5f975af5b93ac113a68ba26a739c3/R/tabelas.html")
     )
   )
 )
