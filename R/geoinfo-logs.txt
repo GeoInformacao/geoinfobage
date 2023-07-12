@@ -1,0 +1,819 @@
+2023-07-12T15:14:50.385871+00:00 shinyapps[9446342]: Container event from container-8377567: start
+2023-07-12T15:14:50.762384+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:14:50.762405+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:14:50.968299+00:00 shinyapps[9446342]: Running on host: 3da7ce09cc55
+2023-07-12T15:14:50.970902+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:14:50.970916+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:14:50.970920+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:14:50.970923+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:14:50.971116+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:14:50.971129+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:14:50.971384+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:14:50.971418+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:14:50.971442+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:14:50.978163+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:14:50.978175+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:14:50.978179+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:14:50.978182+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:14:50.978185+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:14:50.978199+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:14:50.978204+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:14:50.978210+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:14:50.978424+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:14:51.338226+00:00 shinyapps[9446342]: Starting R with process ID: '34'
+2023-07-12T15:14:51.338572+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:14:51.386883+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:40469
+2023-07-12T15:14:54.433175+00:00 shinyapps[9446342]: [1] "Pacote instalado... devtools"
+2023-07-12T15:14:54.433207+00:00 shinyapps[9446342]: [1] "Carregando... devtools"
+2023-07-12T15:14:54.435691+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T15:14:55.016817+00:00 shinyapps[9446342]: [1] "Pacote instalado... geobage"
+2023-07-12T15:14:55.016854+00:00 shinyapps[9446342]: [1] "Carregando... geobage"
+2023-07-12T15:14:55.024254+00:00 shinyapps[9446342]: [1] "Pacote instalado... shiny"
+2023-07-12T15:14:55.024281+00:00 shinyapps[9446342]: [1] "Carregando... shiny"
+2023-07-12T15:14:55.025522+00:00 shinyapps[9446342]: [1] "Instalando shinydashboard ..."
+2023-07-12T15:14:55.025738+00:00 shinyapps[9446342]: Warning in install.packages(pacote, dependencies = TRUE) :
+2023-07-12T15:14:55.025747+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T15:14:55.026647+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T15:14:55.034050+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T15:14:55.034081+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T15:14:55.034087+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T15:14:55.034093+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T15:14:55.034097+00:00 shinyapps[9446342]:   76: source
+2023-07-12T15:14:55.034103+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T15:14:55.034107+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T15:14:55.034110+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T15:14:55.034117+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T15:14:55.034122+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T15:14:55.034125+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T15:14:55.034128+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T15:14:55.034131+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T15:14:55.034134+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T15:14:55.034138+00:00 shinyapps[9446342]:    1: local
+2023-07-12T15:16:48.317190+00:00 shinyapps[9446342]: Container event from container-8377575: start
+2023-07-12T15:16:48.556257+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:16:48.556282+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:16:48.730667+00:00 shinyapps[9446342]: Running on host: 7c860c9ceb9d
+2023-07-12T15:16:48.733293+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:16:48.733308+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:16:48.733312+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:16:48.733315+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:16:48.733517+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:16:48.733533+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:16:48.733790+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:16:48.733844+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:16:48.733855+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:16:48.740601+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:16:48.740610+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:16:48.740614+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:16:48.740620+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:16:48.740625+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:16:48.740636+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:16:48.740658+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:16:48.740667+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:16:48.740848+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:16:49.115015+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T15:16:49.115400+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:16:49.146887+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:44633
+2023-07-12T15:16:51.101346+00:00 shinyapps[9446342]: Container event from container-8377567: stop
+2023-07-12T15:17:04.704122+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:17:04.704156+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:17:04.854837+00:00 shinyapps[9446342]: Running on host: 7c860c9ceb9d
+2023-07-12T15:17:04.857359+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:17:04.857382+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:17:04.857387+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:17:04.857396+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:17:04.857636+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:17:04.857641+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:17:04.858040+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:17:04.858081+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:17:04.858090+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:17:04.865252+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:17:04.865273+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:17:04.865280+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:17:04.865290+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:17:04.865296+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:17:04.865312+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:17:04.865318+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:17:04.865325+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:17:04.865530+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:17:05.243716+00:00 shinyapps[9446342]: Starting R with process ID: '54'
+2023-07-12T15:17:05.244216+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:17:05.274829+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:46613
+2023-07-12T15:17:05.623303+00:00 shinyapps[9446342]: [1] "Pacote instalado... devtools"
+2023-07-12T15:17:05.623340+00:00 shinyapps[9446342]: [1] "Carregando... devtools"
+2023-07-12T15:17:05.625949+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T15:17:06.208812+00:00 shinyapps[9446342]: [1] "Pacote instalado... geobage"
+2023-07-12T15:17:06.208839+00:00 shinyapps[9446342]: [1] "Carregando... geobage"
+2023-07-12T15:17:06.215091+00:00 shinyapps[9446342]: [1] "Pacote instalado... shiny"
+2023-07-12T15:17:06.215115+00:00 shinyapps[9446342]: [1] "Carregando... shiny"
+2023-07-12T15:17:06.216300+00:00 shinyapps[9446342]: [1] "Instalando shinydashboard ..."
+2023-07-12T15:17:06.216477+00:00 shinyapps[9446342]: Warning in install.packages(pacote, dependencies = TRUE) :
+2023-07-12T15:17:06.216482+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T15:17:06.217324+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T15:17:06.224514+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T15:17:06.224544+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T15:17:06.224548+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T15:17:06.224552+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T15:17:06.224555+00:00 shinyapps[9446342]:   76: source
+2023-07-12T15:17:06.224558+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T15:17:06.224561+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T15:17:06.224564+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T15:17:06.224567+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T15:17:06.224589+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T15:17:06.224593+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T15:17:06.224596+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T15:17:06.224599+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T15:17:06.224602+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T15:17:06.224605+00:00 shinyapps[9446342]:    1: local
+2023-07-12T15:17:25.684594+00:00 shinyapps[9446342]: Container event from container-8377579: start
+2023-07-12T15:17:25.915033+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:17:25.915057+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:17:26.066219+00:00 shinyapps[9446342]: Running on host: c453ce060886
+2023-07-12T15:17:26.068804+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:17:26.068823+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:17:26.068826+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:17:26.068831+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:17:26.069068+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:17:26.069087+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:17:26.069341+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:17:26.069346+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:17:26.069370+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:17:26.076132+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:17:26.076150+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:17:26.076154+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:17:26.076157+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:17:26.076161+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:17:26.076171+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:17:26.076177+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:17:26.076180+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:17:26.076391+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:17:26.451133+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T15:17:26.451482+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:17:26.509032+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:39419
+2023-07-12T15:17:28.218633+00:00 shinyapps[9446342]: Container event from container-8377575: stop
+2023-07-12T15:17:36.420152+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:17:36.420180+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:17:36.613664+00:00 shinyapps[9446342]: Running on host: c453ce060886
+2023-07-12T15:17:36.616183+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:17:36.616203+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:17:36.616209+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:17:36.616214+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:17:36.616479+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:17:36.616499+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:17:36.616744+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:17:36.616765+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:17:36.616774+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:17:36.623500+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:17:36.623523+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:17:36.623527+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:17:36.623536+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:17:36.623540+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:17:36.623555+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:17:36.623575+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:17:36.623591+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:17:36.623737+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:17:37.014164+00:00 shinyapps[9446342]: Starting R with process ID: '54'
+2023-07-12T15:17:37.014643+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:17:37.049531+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:44725
+2023-07-12T15:17:37.342785+00:00 shinyapps[9446342]: [1] "Pacote instalado... devtools"
+2023-07-12T15:17:37.342818+00:00 shinyapps[9446342]: [1] "Carregando... devtools"
+2023-07-12T15:17:37.345448+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T15:17:38.041241+00:00 shinyapps[9446342]: [1] "Pacote instalado... geobage"
+2023-07-12T15:17:38.041279+00:00 shinyapps[9446342]: [1] "Carregando... geobage"
+2023-07-12T15:17:38.047722+00:00 shinyapps[9446342]: [1] "Pacote instalado... shiny"
+2023-07-12T15:17:38.047751+00:00 shinyapps[9446342]: [1] "Carregando... shiny"
+2023-07-12T15:17:38.048935+00:00 shinyapps[9446342]: [1] "Instalando shinydashboard ..."
+2023-07-12T15:17:38.049158+00:00 shinyapps[9446342]: Warning in install.packages(pacote, dependencies = TRUE) :
+2023-07-12T15:17:38.049181+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T15:17:38.050000+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T15:17:38.057197+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T15:17:38.057232+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T15:17:38.057240+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T15:17:38.057246+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T15:17:38.057283+00:00 shinyapps[9446342]:   76: source
+2023-07-12T15:17:38.057299+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T15:17:38.057305+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T15:17:38.057310+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T15:17:38.057316+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T15:17:38.057332+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T15:17:38.057337+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T15:17:38.057342+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T15:17:38.057347+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T15:17:38.057352+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T15:17:38.057361+00:00 shinyapps[9446342]:    1: local
+2023-07-12T15:18:15.226508+00:00 shinyapps[9446342]: Container event from container-8377579: stop
+2023-07-12T15:18:23.019962+00:00 shinyapps[9446342]: Container event from container-8377579: start
+2023-07-12T15:18:23.258086+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:18:23.258130+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:18:23.450826+00:00 shinyapps[9446342]: Running on host: 8a4da8633958
+2023-07-12T15:18:23.453352+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:18:23.453365+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:18:23.453369+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:18:23.453372+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:18:23.453574+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:18:23.453587+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:18:23.453834+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:18:23.453840+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:18:23.453862+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:18:23.460639+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:18:23.460650+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:18:23.460655+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:18:23.460658+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:18:23.460661+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:18:23.460673+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:18:23.460679+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:18:23.460684+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:18:23.460846+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:18:23.838403+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T15:18:23.838779+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:18:23.869953+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:34479
+2023-07-12T15:18:25.001579+00:00 shinyapps[9446342]: [1] "Pacote instalado... devtools"
+2023-07-12T15:18:25.001618+00:00 shinyapps[9446342]: [1] "Carregando... devtools"
+2023-07-12T15:18:25.004195+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T15:18:25.612447+00:00 shinyapps[9446342]: [1] "Pacote instalado... geobage"
+2023-07-12T15:18:25.612479+00:00 shinyapps[9446342]: [1] "Carregando... geobage"
+2023-07-12T15:18:25.618851+00:00 shinyapps[9446342]: [1] "Pacote instalado... shiny"
+2023-07-12T15:18:25.618877+00:00 shinyapps[9446342]: [1] "Carregando... shiny"
+2023-07-12T15:18:25.620058+00:00 shinyapps[9446342]: [1] "Instalando shinydashboard ..."
+2023-07-12T15:18:25.620220+00:00 shinyapps[9446342]: Warning in install.packages(pacote, dependencies = TRUE) :
+2023-07-12T15:18:25.620229+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T15:18:25.621092+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T15:18:25.628155+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T15:18:25.628178+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T15:18:25.628182+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T15:18:25.628186+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T15:18:25.628196+00:00 shinyapps[9446342]:   76: source
+2023-07-12T15:18:25.628200+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T15:18:25.628205+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T15:18:25.628211+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T15:18:25.628221+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T15:18:25.628227+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T15:18:25.628247+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T15:18:25.628262+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T15:18:25.628266+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T15:18:25.628269+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T15:18:25.628272+00:00 shinyapps[9446342]:    1: local
+2023-07-12T15:34:37.159006+00:00 shinyapps[9446342]: Container event from container-8377579: stop
+2023-07-12T15:39:36.472269+00:00 shinyapps[9446342]: Container event from container-8377668: start
+2023-07-12T15:39:36.717325+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:39:36.717348+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:39:36.873429+00:00 shinyapps[9446342]: Running on host: 90cc7a2dadd0
+2023-07-12T15:39:36.875888+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:39:36.875903+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:39:36.875906+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:39:36.875938+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:39:36.876226+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:39:36.876236+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:39:36.876666+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:39:36.876707+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:39:36.876721+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:39:36.885359+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:39:36.885377+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:39:36.885383+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:39:36.885388+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:39:36.885393+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:39:36.885406+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:39:36.885409+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:39:36.885412+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:39:36.885566+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:39:37.251411+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T15:39:37.251835+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:39:37.282086+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:46145
+2023-07-12T15:39:42.612194+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T15:39:42.612227+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T15:39:42.766893+00:00 shinyapps[9446342]: Running on host: 90cc7a2dadd0
+2023-07-12T15:39:42.769470+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T15:39:42.769496+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T15:39:42.769506+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T15:39:42.769511+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T15:39:42.769724+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T15:39:42.769736+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T15:39:42.770022+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T15:39:42.770049+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T15:39:42.770055+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T15:39:42.776574+00:00 shinyapps[9446342]: shiny version: 1.7.4
+2023-07-12T15:39:42.776591+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T15:39:42.776595+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T15:39:42.776598+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T15:39:42.776606+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T15:39:42.776618+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T15:39:42.776621+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T15:39:42.776626+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T15:39:42.776766+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T15:39:43.162244+00:00 shinyapps[9446342]: Starting R with process ID: '54'
+2023-07-12T15:39:43.162610+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T15:39:43.192963+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:44895
+2023-07-12T15:39:43.580168+00:00 shinyapps[9446342]: [1] "Pacote instalado... devtools"
+2023-07-12T15:39:43.580197+00:00 shinyapps[9446342]: [1] "Carregando... devtools"
+2023-07-12T15:39:43.582622+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T15:39:44.093182+00:00 shinyapps[9446342]: [1] "Pacote instalado... geobage"
+2023-07-12T15:39:44.093212+00:00 shinyapps[9446342]: [1] "Carregando... geobage"
+2023-07-12T15:39:44.099155+00:00 shinyapps[9446342]: [1] "Pacote instalado... shiny"
+2023-07-12T15:39:44.099169+00:00 shinyapps[9446342]: [1] "Carregando... shiny"
+2023-07-12T15:39:44.100268+00:00 shinyapps[9446342]: [1] "Instalando shinydashboard ..."
+2023-07-12T15:39:44.100448+00:00 shinyapps[9446342]: Warning in install.packages(pacote) :
+2023-07-12T15:39:44.100466+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T15:39:44.101331+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T15:39:44.108109+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T15:39:44.108151+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T15:39:44.108158+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T15:39:44.108162+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T15:39:44.108166+00:00 shinyapps[9446342]:   76: source
+2023-07-12T15:39:44.108169+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T15:39:44.108172+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T15:39:44.108175+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T15:39:44.108183+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T15:39:44.108190+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T15:39:44.108193+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T15:39:44.108196+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T15:39:44.108199+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T15:39:44.108202+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T15:39:44.108205+00:00 shinyapps[9446342]:    1: local
+2023-07-12T15:55:24.205989+00:00 shinyapps[9446342]: Container event from container-8377668: stop
+2023-07-12T16:00:07.589982+00:00 shinyapps[9446342]: Container event from container-8377768: start
+2023-07-12T16:00:08.279967+00:00 shinyapps[9446342]: Running on host: 1bdf9aa2fc88
+2023-07-12T16:00:08.282597+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:00:08.282623+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:00:08.282627+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:00:08.282630+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:00:08.282803+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:00:08.282808+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:00:08.283084+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:00:08.283096+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:00:08.283116+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:00:08.288782+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:00:08.288796+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:00:08.288806+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:00:08.288811+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:00:08.288817+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:00:08.288849+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:00:08.288863+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:00:08.288876+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:00:08.289034+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:00:08.546659+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T16:00:08.547463+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:00:08.583978+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:40621
+2023-07-12T16:00:12.767342+00:00 shinyapps[9446342]: [1] "Instalando pacotes..."
+2023-07-12T16:00:12.769850+00:00 shinyapps[9446342]: Warning in install.packages("devtools") :
+2023-07-12T16:00:12.769878+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T16:00:12.770831+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T16:00:12.790602+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T16:00:12.790626+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T16:00:12.790631+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T16:00:12.790641+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T16:00:12.790645+00:00 shinyapps[9446342]:   76: source
+2023-07-12T16:00:12.790648+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:00:12.790651+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:00:12.790656+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:00:12.790660+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:00:12.790663+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:00:12.790670+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:00:12.790673+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:00:12.790676+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:00:12.790680+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:00:12.790683+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:06:25.930412+00:00 shinyapps[9446342]: Container event from container-8377802: start
+2023-07-12T16:06:26.534655+00:00 shinyapps[9446342]: Running on host: 419b437a7f8e
+2023-07-12T16:06:26.537183+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:06:26.537209+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:06:26.537213+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:06:26.537216+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:06:26.537396+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:06:26.537409+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:06:26.537627+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:06:26.537633+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:06:26.537662+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:06:26.543322+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:06:26.543347+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:06:26.543356+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:06:26.543359+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:06:26.543383+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:06:26.543398+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:06:26.543404+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:06:26.543421+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:06:26.543573+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:06:26.737302+00:00 shinyapps[9446342]: Starting R with process ID: '36'
+2023-07-12T16:06:26.737731+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:06:26.769554+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:41083
+2023-07-12T16:06:28.629452+00:00 shinyapps[9446342]: Container event from container-8377768: stop
+2023-07-12T16:06:34.846369+00:00 shinyapps[9446342]: Running on host: 419b437a7f8e
+2023-07-12T16:06:34.848898+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:06:34.848923+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:06:34.848929+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:06:34.848932+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:06:34.849123+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:06:34.849147+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:06:34.849349+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:06:34.849355+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:06:34.849386+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:06:34.854938+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:06:34.854956+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:06:34.854970+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:06:34.854978+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:06:34.854982+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:06:34.854989+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:06:34.854996+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:06:34.855018+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:06:34.855119+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:06:35.046517+00:00 shinyapps[9446342]: Starting R with process ID: '55'
+2023-07-12T16:06:35.046933+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:06:35.105179+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:40335
+2023-07-12T16:06:35.268448+00:00 shinyapps[9446342]: [1] "Tentativa de carregamento..."
+2023-07-12T16:06:35.271057+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T16:06:35.864625+00:00 shinyapps[9446342]: Attaching package: ‘shinydashboard’
+2023-07-12T16:06:35.865202+00:00 shinyapps[9446342]: The following object is masked from ‘package:graphics’:
+2023-07-12T16:06:35.865223+00:00 shinyapps[9446342]:     box
+2023-07-12T16:06:36.143728+00:00 shinyapps[9446342]: Attaching package: ‘dplyr’
+2023-07-12T16:06:36.143925+00:00 shinyapps[9446342]: The following objects are masked from ‘package:stats’:
+2023-07-12T16:06:36.143949+00:00 shinyapps[9446342]:     filter, lag
+2023-07-12T16:06:36.144137+00:00 shinyapps[9446342]: The following objects are masked from ‘package:base’:
+2023-07-12T16:06:36.144165+00:00 shinyapps[9446342]:     intersect, setdiff, setequal, union
+2023-07-12T16:06:36.271887+00:00 shinyapps[9446342]: [1] "Instalando pacotes..."
+2023-07-12T16:06:36.274451+00:00 shinyapps[9446342]: Warning in install.packages("devtools") :
+2023-07-12T16:06:36.274482+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T16:06:36.275320+00:00 shinyapps[9446342]: Warning: Error in install.packages: unable to install packages
+2023-07-12T16:06:36.309182+00:00 shinyapps[9446342]:   81: stop
+2023-07-12T16:06:36.309216+00:00 shinyapps[9446342]:   80: install.packages
+2023-07-12T16:06:36.309224+00:00 shinyapps[9446342]:   79: eval
+2023-07-12T16:06:36.309231+00:00 shinyapps[9446342]:   78: eval
+2023-07-12T16:06:36.309235+00:00 shinyapps[9446342]:   76: source
+2023-07-12T16:06:36.309238+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:06:36.309242+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:06:36.309245+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:06:36.309260+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:06:36.309267+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:06:36.309270+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:06:36.309273+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:06:36.309276+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:06:36.309279+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:06:36.309282+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:09:13.886470+00:00 shinyapps[9446342]: Container event from container-8377809: start
+2023-07-12T16:09:14.137725+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T16:09:14.137750+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T16:09:14.312297+00:00 shinyapps[9446342]: Running on host: 3f46ad6c881a
+2023-07-12T16:09:14.314933+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:09:14.314942+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:09:14.314945+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:09:14.314952+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:09:14.315209+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:09:14.315230+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:09:14.315488+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:09:14.315510+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:09:14.315550+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:09:14.320320+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:09:14.320329+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:09:14.320345+00:00 shinyapps[9446342]: rmarkdown version: (none)
+2023-07-12T16:09:14.320353+00:00 shinyapps[9446342]: knitr version: (none)
+2023-07-12T16:09:14.320366+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:09:14.320392+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:09:14.320407+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:09:14.320427+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:09:14.320623+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:09:14.698660+00:00 shinyapps[9446342]: Starting R with process ID: '36'
+2023-07-12T16:09:14.699034+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:09:14.729912+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:46271
+2023-07-12T16:09:17.589058+00:00 shinyapps[9446342]: Container event from container-8377802: stop
+2023-07-12T16:09:20.678740+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T16:09:20.678777+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T16:09:20.835590+00:00 shinyapps[9446342]: Running on host: 3f46ad6c881a
+2023-07-12T16:09:20.873676+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:09:20.873710+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:09:20.873715+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:09:20.873720+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:09:20.873939+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:09:20.873967+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:09:20.874301+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:09:20.874333+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:09:20.874344+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:09:20.879490+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:09:20.879520+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:09:20.879583+00:00 shinyapps[9446342]: rmarkdown version: (none)
+2023-07-12T16:09:20.879604+00:00 shinyapps[9446342]: knitr version: (none)
+2023-07-12T16:09:20.879611+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:09:20.879630+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:09:20.879635+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:09:20.879640+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:09:20.879777+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:09:21.284298+00:00 shinyapps[9446342]: Starting R with process ID: '55'
+2023-07-12T16:09:21.284692+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:09:21.317637+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:43831
+2023-07-12T16:09:21.521533+00:00 shinyapps[9446342]: Warning in file(filename, "r", encoding = encoding) :
+2023-07-12T16:09:21.521559+00:00 shinyapps[9446342]:   cannot open file 'app.R': No such file or directory
+2023-07-12T16:09:21.522355+00:00 shinyapps[9446342]: Warning: Error in file: cannot open the connection
+2023-07-12T16:09:21.533420+00:00 shinyapps[9446342]:   77: file
+2023-07-12T16:09:21.533446+00:00 shinyapps[9446342]:   76: source
+2023-07-12T16:09:21.533468+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:09:21.533474+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:09:21.533479+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:09:21.533484+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:09:21.533494+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:09:21.533499+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:09:21.533504+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:09:21.533508+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:09:21.533518+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:09:21.533523+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:11:11.995494+00:00 shinyapps[9446342]: Container event from container-8377817: start
+2023-07-12T16:11:12.250416+00:00 shinyapps[9446342]: Warning: namespace ‘leaflet’ is not available and has been replaced
+2023-07-12T16:11:12.250442+00:00 shinyapps[9446342]: by .GlobalEnv when processing object ‘m’
+2023-07-12T16:11:12.441718+00:00 shinyapps[9446342]: Running on host: 355f5fc0d8f6
+2023-07-12T16:11:12.444275+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:11:12.444290+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:11:12.444294+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:11:12.444297+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:11:12.444567+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:11:12.444579+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:11:12.444873+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:11:12.444881+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:11:12.444884+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:11:12.449829+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:11:12.449841+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:11:12.449850+00:00 shinyapps[9446342]: rmarkdown version: (none)
+2023-07-12T16:11:12.449854+00:00 shinyapps[9446342]: knitr version: (none)
+2023-07-12T16:11:12.449892+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:11:12.449910+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:11:12.449915+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:11:12.449935+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:11:12.450156+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:11:12.806421+00:00 shinyapps[9446342]: Starting R with process ID: '36'
+2023-07-12T16:11:12.806821+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:11:12.838134+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:43437
+2023-07-12T16:11:14.559673+00:00 shinyapps[9446342]: Container event from container-8377809: stop
+2023-07-12T16:11:17.173300+00:00 shinyapps[9446342]: Warning: Error in dashboardPage: could not find function "dashboardPage"
+2023-07-12T16:11:17.187355+00:00 shinyapps[9446342]:   95: dots_list
+2023-07-12T16:11:17.187389+00:00 shinyapps[9446342]:   94: div
+2023-07-12T16:11:17.187394+00:00 shinyapps[9446342]:   93: tabPanel_
+2023-07-12T16:11:17.187397+00:00 shinyapps[9446342]:   92: bslib::nav
+2023-07-12T16:11:17.187412+00:00 shinyapps[9446342]:   91: tabPanel
+2023-07-12T16:11:17.187415+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:11:17.187422+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:11:17.187425+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:11:17.187428+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:11:17.187432+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:11:17.187435+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:11:17.187445+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:11:17.187449+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:11:17.187452+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:11:17.187455+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:15:42.723031+00:00 shinyapps[9446342]: Container event from container-8377838: start
+2023-07-12T16:15:43.384549+00:00 shinyapps[9446342]: Running on host: 8c8fc1080b50
+2023-07-12T16:15:43.386842+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:15:43.386872+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:15:43.386878+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:15:43.386881+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:15:43.387079+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:15:43.387087+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:15:43.387314+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:15:43.387333+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:15:43.387351+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:15:43.392839+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:15:43.392849+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:15:43.392854+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:15:43.392874+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:15:43.392880+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:15:43.392911+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:15:43.392916+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:15:43.392960+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:15:43.393093+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:15:43.589073+00:00 shinyapps[9446342]: Starting R with process ID: '34'
+2023-07-12T16:15:43.589874+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:15:43.631147+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:38569
+2023-07-12T16:15:45.224912+00:00 shinyapps[9446342]: Container event from container-8377817: stop
+2023-07-12T16:15:50.327553+00:00 shinyapps[9446342]: Running on host: 8c8fc1080b50
+2023-07-12T16:15:50.332557+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:15:50.332603+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:15:50.332955+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:15:50.332965+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:15:50.332994+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:15:50.333000+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:15:50.333006+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:15:50.333011+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:15:50.333016+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:15:50.337492+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:15:50.337526+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:15:50.337538+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:15:50.337542+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:15:50.337545+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:15:50.337554+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:15:50.337557+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:15:50.337560+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:15:50.337779+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:15:50.527987+00:00 shinyapps[9446342]: Starting R with process ID: '59'
+2023-07-12T16:15:50.528853+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:15:50.585802+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:40635
+2023-07-12T16:15:50.798465+00:00 shinyapps[9446342]: [1] "Carregando pacotes UI..."
+2023-07-12T16:15:50.800880+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T16:15:51.401985+00:00 shinyapps[9446342]: Attaching package: ‘shinydashboard’
+2023-07-12T16:15:51.401996+00:00 shinyapps[9446342]: The following object is masked from ‘package:graphics’:
+2023-07-12T16:15:51.402006+00:00 shinyapps[9446342]:     box
+2023-07-12T16:15:51.620877+00:00 shinyapps[9446342]: Attaching package: ‘dplyr’
+2023-07-12T16:15:51.621067+00:00 shinyapps[9446342]: The following objects are masked from ‘package:stats’:
+2023-07-12T16:15:51.621094+00:00 shinyapps[9446342]:     filter, lag
+2023-07-12T16:15:51.621268+00:00 shinyapps[9446342]: The following objects are masked from ‘package:base’:
+2023-07-12T16:15:51.621289+00:00 shinyapps[9446342]:     intersect, setdiff, setequal, union
+2023-07-12T16:15:54.846604+00:00 shinyapps[9446342]: [1] "Carregando pacotes Server..."
+2023-07-12T16:15:54.898219+00:00 shinyapps[9446342]: Warning: Error in read_shape_bg: could not find function "read_shape_bg"
+2023-07-12T16:15:54.905428+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:15:54.905467+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:15:54.905486+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:15:54.905491+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:15:54.905496+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:15:54.905501+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:15:54.905506+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:15:54.905511+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:15:54.905514+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:15:54.905517+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:16:00.520180+00:00 shinyapps[9446342]: Warning: Error in read_shape_bg: could not find function "read_shape_bg"
+2023-07-12T16:16:00.524049+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:16:00.524071+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:16:00.524077+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:16:00.524082+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:16:00.524104+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:16:00.524110+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:16:00.524114+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:16:00.524118+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:16:00.524122+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:16:00.524128+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:22:03.387290+00:00 shinyapps[9446342]: Container event from container-8377855: start
+2023-07-12T16:22:03.936733+00:00 shinyapps[9446342]: Running on host: 6462cb310641
+2023-07-12T16:22:03.959492+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:22:03.959510+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:22:03.959514+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:22:03.959519+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:22:03.959727+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:22:03.959742+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:22:03.960000+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:22:03.960004+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:22:03.960044+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:22:03.965304+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:22:03.965325+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:22:03.965329+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:22:03.965334+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:22:03.965337+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:22:03.965357+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:22:03.965363+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:22:03.965380+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:22:03.965544+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:22:04.130849+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T16:22:04.131245+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:22:04.187044+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:43801
+2023-07-12T16:22:06.191147+00:00 shinyapps[9446342]: Container event from container-8377838: stop
+2023-07-12T16:22:13.814836+00:00 shinyapps[9446342]: Running on host: 6462cb310641
+2023-07-12T16:22:13.817072+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:22:13.817090+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:22:13.817096+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:22:13.817111+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:22:13.817264+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:22:13.817271+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:22:13.817474+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:22:13.817481+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:22:13.817502+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:22:13.822522+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:22:13.822551+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:22:13.822562+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:22:13.822566+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:22:13.822601+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:22:13.822620+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:22:13.822626+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:22:13.822631+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:22:13.822751+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:22:14.004156+00:00 shinyapps[9446342]: Starting R with process ID: '54'
+2023-07-12T16:22:14.004531+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:22:14.032589+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:35167
+2023-07-12T16:22:14.279048+00:00 shinyapps[9446342]: [1] "Carregando pacotes UI..."
+2023-07-12T16:22:14.281414+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T16:22:14.877832+00:00 shinyapps[9446342]: Attaching package: ‘shinydashboard’
+2023-07-12T16:22:14.878437+00:00 shinyapps[9446342]: The following object is masked from ‘package:graphics’:
+2023-07-12T16:22:14.878455+00:00 shinyapps[9446342]:     box
+2023-07-12T16:22:15.083957+00:00 shinyapps[9446342]: Attaching package: ‘dplyr’
+2023-07-12T16:22:15.084168+00:00 shinyapps[9446342]: The following objects are masked from ‘package:stats’:
+2023-07-12T16:22:15.084197+00:00 shinyapps[9446342]:     filter, lag
+2023-07-12T16:22:15.084423+00:00 shinyapps[9446342]: The following objects are masked from ‘package:base’:
+2023-07-12T16:22:15.084460+00:00 shinyapps[9446342]:     intersect, setdiff, setequal, union
+2023-07-12T16:22:15.203361+00:00 shinyapps[9446342]: [1] "Instalando Geobage ..."
+2023-07-12T16:22:15.381561+00:00 shinyapps[9446342]: Downloading GitHub repo GeoInformacao/geobage@HEAD
+2023-07-12T16:22:16.925279+00:00 shinyapps[9446342]: Rcpp       (1.0.10 -> 1.0.11) [CRAN]
+2023-07-12T16:22:16.925311+00:00 shinyapps[9446342]: cpp11      (0.4.3  -> 0.4.4 ) [CRAN]
+2023-07-12T16:22:16.925323+00:00 shinyapps[9446342]: curl       (5.0.0  -> 5.0.1 ) [CRAN]
+2023-07-12T16:22:16.925327+00:00 shinyapps[9446342]: jsonlite   (1.8.4  -> 1.8.7 ) [CRAN]
+2023-07-12T16:22:16.925330+00:00 shinyapps[9446342]: sfheaders  (0.4.2  -> 0.4.3 ) [CRAN]
+2023-07-12T16:22:16.925334+00:00 shinyapps[9446342]: geometries (0.2.2  -> 0.2.3 ) [CRAN]
+2023-07-12T16:22:16.925337+00:00 shinyapps[9446342]: sp         (1.6-0  -> 2.0-0 ) [CRAN]
+2023-07-12T16:22:16.925340+00:00 shinyapps[9446342]: V8         (4.3.0  -> 4.3.2 ) [CRAN]
+2023-07-12T16:22:16.925343+00:00 shinyapps[9446342]: sf         (1.0-13 -> 1.0-14) [CRAN]
+2023-07-12T16:22:16.927491+00:00 shinyapps[9446342]: Installing 9 packages: Rcpp, cpp11, curl, jsonlite, sfheaders, geometries, sp, V8, sf
+2023-07-12T16:22:16.928895+00:00 shinyapps[9446342]: Warning in i.p(...) :
+2023-07-12T16:22:16.928903+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T16:22:16.932536+00:00 shinyapps[9446342]: Warning: Error in : Failed to install 'geobage' from GitHub:
+2023-07-12T16:22:16.932566+00:00 shinyapps[9446342]:   unable to install packages
+2023-07-12T16:22:16.964560+00:00 shinyapps[9446342]:   84: <Anonymous>
+2023-07-12T16:22:16.964575+00:00 shinyapps[9446342]:   83: stop
+2023-07-12T16:22:16.964579+00:00 shinyapps[9446342]:   82: value[[3L]]
+2023-07-12T16:22:16.964591+00:00 shinyapps[9446342]:   81: tryCatchOne
+2023-07-12T16:22:16.964594+00:00 shinyapps[9446342]:   80: tryCatchList
+2023-07-12T16:22:16.964601+00:00 shinyapps[9446342]:   79: tryCatch
+2023-07-12T16:22:16.964604+00:00 shinyapps[9446342]:   78: install_remotes
+2023-07-12T16:22:16.964607+00:00 shinyapps[9446342]:   76: devtools::install_github
+2023-07-12T16:22:16.964610+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:22:16.964615+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:22:16.964621+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:22:16.964624+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:22:16.964627+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:22:16.964631+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:22:16.964634+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:22:16.964651+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:22:16.964668+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:22:16.964673+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:27:41.831286+00:00 shinyapps[9446342]: Container event from container-8377875: start
+2023-07-12T16:27:42.418131+00:00 shinyapps[9446342]: Running on host: be329ad3d13a
+2023-07-12T16:27:42.420563+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:27:42.420595+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:27:42.420601+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:27:42.420606+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:27:42.420778+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:27:42.420787+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:27:42.421076+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:27:42.421116+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:27:42.421136+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:27:42.426761+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:27:42.426776+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:27:42.426782+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:27:42.426786+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:27:42.426795+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:27:42.426800+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:27:42.426804+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:27:42.426820+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:27:42.427018+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:27:42.603180+00:00 shinyapps[9446342]: Starting R with process ID: '35'
+2023-07-12T16:27:42.603586+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:27:42.657348+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:33481
+2023-07-12T16:27:45.127626+00:00 shinyapps[9446342]: Container event from container-8377855: stop
+2023-07-12T16:27:50.172142+00:00 shinyapps[9446342]: Running on host: be329ad3d13a
+2023-07-12T16:27:50.174493+00:00 shinyapps[9446342]: Running as user: uid=10001(shiny) gid=10001(shiny) groups=10001(shiny)
+2023-07-12T16:27:50.174524+00:00 shinyapps[9446342]: Connect version: 2023.03.0
+2023-07-12T16:27:50.174531+00:00 shinyapps[9446342]: LANG: C.UTF-8
+2023-07-12T16:27:50.174536+00:00 shinyapps[9446342]: Working directory: /srv/connect/apps/geoinfo
+2023-07-12T16:27:50.174662+00:00 shinyapps[9446342]: Using R 4.3.1
+2023-07-12T16:27:50.174677+00:00 shinyapps[9446342]: R.home(): /opt/R/4.3.1/lib/R
+2023-07-12T16:27:50.174928+00:00 shinyapps[9446342]: Content will use current R environment
+2023-07-12T16:27:50.174938+00:00 shinyapps[9446342]: R_LIBS: (unset)
+2023-07-12T16:27:50.174947+00:00 shinyapps[9446342]: .libPaths(): /opt/R/4.3.1/lib/R/library
+2023-07-12T16:27:50.180238+00:00 shinyapps[9446342]: shiny version: 1.7.4.1
+2023-07-12T16:27:50.180248+00:00 shinyapps[9446342]: httpuv version: 1.6.11
+2023-07-12T16:27:50.180260+00:00 shinyapps[9446342]: rmarkdown version: 2.21
+2023-07-12T16:27:50.180290+00:00 shinyapps[9446342]: knitr version: 1.43
+2023-07-12T16:27:50.180308+00:00 shinyapps[9446342]: jsonlite version: 1.8.4
+2023-07-12T16:27:50.180312+00:00 shinyapps[9446342]: RJSONIO version: (none)
+2023-07-12T16:27:50.180318+00:00 shinyapps[9446342]: htmltools version: 0.5.5
+2023-07-12T16:27:50.180321+00:00 shinyapps[9446342]: reticulate version: (none)
+2023-07-12T16:27:50.180460+00:00 shinyapps[9446342]: Using pandoc: /opt/connect/ext/pandoc/2.16
+2023-07-12T16:27:50.364622+00:00 shinyapps[9446342]: Starting R with process ID: '54'
+2023-07-12T16:27:50.364989+00:00 shinyapps[9446342]: Shiny application starting ...
+2023-07-12T16:27:50.394942+00:00 shinyapps[9446342]: Listening on http://127.0.0.1:41019
+2023-07-12T16:27:50.592373+00:00 shinyapps[9446342]: [1] "Carregando pacotes UI..."
+2023-07-12T16:27:50.594778+00:00 shinyapps[9446342]: Loading required package: usethis
+2023-07-12T16:27:51.182945+00:00 shinyapps[9446342]: Attaching package: ‘shinydashboard’
+2023-07-12T16:27:51.183536+00:00 shinyapps[9446342]: The following object is masked from ‘package:graphics’:
+2023-07-12T16:27:51.183559+00:00 shinyapps[9446342]:     box
+2023-07-12T16:27:51.390017+00:00 shinyapps[9446342]: Attaching package: ‘dplyr’
+2023-07-12T16:27:51.390211+00:00 shinyapps[9446342]: The following objects are masked from ‘package:stats’:
+2023-07-12T16:27:51.390234+00:00 shinyapps[9446342]:     filter, lag
+2023-07-12T16:27:51.390428+00:00 shinyapps[9446342]: The following objects are masked from ‘package:base’:
+2023-07-12T16:27:51.390452+00:00 shinyapps[9446342]:     intersect, setdiff, setequal, union
+2023-07-12T16:27:51.554682+00:00 shinyapps[9446342]: Linking to: OpenSSL 1.1.1f  31 Mar 2020
+2023-07-12T16:27:54.779711+00:00 shinyapps[9446342]: [1] "Carregando pacotes Server..."
+2023-07-12T16:27:54.779907+00:00 shinyapps[9446342]: [1] "Instalando Geobage ..."
+2023-07-12T16:27:54.871369+00:00 shinyapps[9446342]: Downloading GitHub repo GeoInformacao/geobage@HEAD
+2023-07-12T16:27:56.672205+00:00 shinyapps[9446342]: Rcpp       (1.0.10 -> 1.0.11) [CRAN]
+2023-07-12T16:27:56.672243+00:00 shinyapps[9446342]: cpp11      (0.4.3  -> 0.4.4 ) [CRAN]
+2023-07-12T16:27:56.672248+00:00 shinyapps[9446342]: curl       (5.0.0  -> 5.0.1 ) [CRAN]
+2023-07-12T16:27:56.672251+00:00 shinyapps[9446342]: jsonlite   (1.8.4  -> 1.8.7 ) [CRAN]
+2023-07-12T16:27:56.672255+00:00 shinyapps[9446342]: sfheaders  (0.4.2  -> 0.4.3 ) [CRAN]
+2023-07-12T16:27:56.672259+00:00 shinyapps[9446342]: geometries (0.2.2  -> 0.2.3 ) [CRAN]
+2023-07-12T16:27:56.672262+00:00 shinyapps[9446342]: sp         (1.6-0  -> 2.0-0 ) [CRAN]
+2023-07-12T16:27:56.672265+00:00 shinyapps[9446342]: V8         (4.3.0  -> 4.3.2 ) [CRAN]
+2023-07-12T16:27:56.672283+00:00 shinyapps[9446342]: sf         (1.0-13 -> 1.0-14) [CRAN]
+2023-07-12T16:27:56.674396+00:00 shinyapps[9446342]: Installing 9 packages: Rcpp, cpp11, curl, jsonlite, sfheaders, geometries, sp, V8, sf
+2023-07-12T16:27:56.675758+00:00 shinyapps[9446342]: Warning in i.p(...) :
+2023-07-12T16:27:56.675785+00:00 shinyapps[9446342]:   'lib = "/opt/R/4.3.1/lib/R/library"' is not writable
+2023-07-12T16:27:56.679463+00:00 shinyapps[9446342]: Warning: Error in : Failed to install 'geobage' from GitHub:
+2023-07-12T16:27:56.679478+00:00 shinyapps[9446342]:   unable to install packages
+2023-07-12T16:27:56.685626+00:00 shinyapps[9446342]:   63: <Anonymous>
+2023-07-12T16:27:56.685641+00:00 shinyapps[9446342]:   62: stop
+2023-07-12T16:27:56.685645+00:00 shinyapps[9446342]:   61: value[[3L]]
+2023-07-12T16:27:56.685648+00:00 shinyapps[9446342]:   60: tryCatchOne
+2023-07-12T16:27:56.685658+00:00 shinyapps[9446342]:   59: tryCatchList
+2023-07-12T16:27:56.685662+00:00 shinyapps[9446342]:   58: tryCatch
+2023-07-12T16:27:56.685665+00:00 shinyapps[9446342]:   57: install_remotes
+2023-07-12T16:27:56.685703+00:00 shinyapps[9446342]:   55: devtools::install_github
+2023-07-12T16:27:56.685731+00:00 shinyapps[9446342]:   15: <Anonymous>
+2023-07-12T16:27:56.685736+00:00 shinyapps[9446342]:   13: fn
+2023-07-12T16:27:56.685743+00:00 shinyapps[9446342]:    8: retry
+2023-07-12T16:27:56.685747+00:00 shinyapps[9446342]:    7: connect$retryingStartServer
+2023-07-12T16:27:56.685750+00:00 shinyapps[9446342]:    6: eval
+2023-07-12T16:27:56.685753+00:00 shinyapps[9446342]:    5: eval
+2023-07-12T16:27:56.685756+00:00 shinyapps[9446342]:    4: eval
+2023-07-12T16:27:56.685759+00:00 shinyapps[9446342]:    3: eval
+2023-07-12T16:27:56.685766+00:00 shinyapps[9446342]:    2: eval.parent
+2023-07-12T16:27:56.685770+00:00 shinyapps[9446342]:    1: local
+2023-07-12T16:27:56.685773+00:00 shinyapps[9446342]: Error : Failed to install 'geobage' from GitHub:
+2023-07-12T16:27:56.685776+00:00 shinyapps[9446342]:   unable to install packages

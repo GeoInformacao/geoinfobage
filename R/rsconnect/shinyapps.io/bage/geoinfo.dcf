@@ -1,0 +1,13 @@
+name: geoinfo
+title: geoinfo
+username:
+account: bage
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9446342
+bundleId: 7449247
+url: https://bage.shinyapps.io/geoinfo/
+when: 1689181748.80924
+lastSyncTime: 1689181748.80926
+asMultiple: FALSE
+asStatic: FALSE

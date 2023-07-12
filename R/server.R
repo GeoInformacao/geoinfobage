@@ -1,5 +1,18 @@
-source("./app.R")
+#source("./app.R")
 source("./maps.R")
+print("Carregando pacotes Server...")
+library(devtools)
+library(shiny)
+library(shinydashboard)
+library(dplyr)
+library(ggplot2)
+library(leaflet)
+library(webshot)
+library(htmlwidgets)
+
+library(geobage)
+
+library(openssl)
 
 server <- function(input, output, session){
   

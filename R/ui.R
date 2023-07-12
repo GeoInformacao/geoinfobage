@@ -1,4 +1,17 @@
-source("app.R")
+#source("app.R")
+print("Carregando pacotes UI...")
+library(devtools)
+library(shiny)
+library(shinydashboard)
+library(dplyr)
+library(ggplot2)
+library(leaflet)
+library(webshot)
+library(htmlwidgets)
+
+library(geobage)
+ 
+library(openssl)
 
 ui <- fluidRow(
 fluidRow(id = "cabecalho",
